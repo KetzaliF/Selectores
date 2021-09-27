@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header{
+    background: rgb(19,19,19);
+    width: 100%;
+    height: 60px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+.header__icon{
+    height: 40px;
+    width: auto;
+}
+
+.header__title{
+    margin-left: 20px;
+    color: rgb(255,255,255);
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.main{
+    margin: 0 40px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#img1{
+    background: url(assets/img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img2{
+    background: url(assets/img2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img3{
+    background: url(assets/img3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img4{
+    background: url(assets/img4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card{
+    width: 300px;
+    height: 225px;
+    position: relative;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.content{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    padding: 8px 22px;
+    font-style: 25px;
+    font-weight: 300;
+    background: rgba(255,255,255,0);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    transform: scale(0.9);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.144);
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.content__title{
+    font-weight: 500;
+}
+
+hr{
+    height: 3px;
+    margin: 5px 0;
+}
+
+.card:hover .content{
+    height: 145px;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 18px rgba(19, 19, 19,0.3);
+    transform: scale(1.1);
+}
+
+.footer{
+    width: 100%;
+    background: rgb(19,19,19);
+    color: rgb(255,255,255);
+    padding: 25px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 17px;
+    position: relative;
+    bottom: 0;
+}
+
+.footer__credits a{
+    color: rgb(255,255,255);
+    text-decoration: none;
+}
+
+.footer__credits a:hover{
+    color: rgb(69, 164, 243);
+}
